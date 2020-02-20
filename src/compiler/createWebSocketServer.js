@@ -42,7 +42,7 @@ module.exports = function createWebSocketServer() {
   const webSocketServer = new Server({
     server: httpServer,
     perMessageDeflate: false,
-    maxPayload: 200 * 1024 * 1024,
+    maxPayload: 250 * 1024 * 1024,
   });
 
   httpServer.listen(socketAddress);
